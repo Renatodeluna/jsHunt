@@ -1,0 +1,76 @@
+.product-list {
+  max-width: 700px;
+  margin: 40px auto 0;
+  padding: 0 20px;
+}
+
+.product-list article {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.product-list p {
+  font-size: 16px;
+  color: #999;
+  line-height: 24px;
+  margin-top: 5px;
+}
+
+.product-list a {
+  height: 42px;
+  border-radius: 8px;
+  border: 2px solid #da552f;
+  background: none;
+  margin-top: 10px;
+  color: #da552f;
+  font-weight: bold;
+  font-size: 16px;
+  text-decoration: none;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.4s;
+}
+
+.product-list a:hover {
+  background: #da552f;
+  color: #fff;
+}
+
+.product-list .actions {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-list .actions button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: 0;
+  background: #da552f;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  opacity: 1;
+  transition: opacity 0.4s;
+}
+
+.product-list .actions button[disabled] {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.product-list .actions button[disabled]:hover,
+.product-list .actions button[disabled]:focus {
+  opacity: 0.5;
+}
+
+.product-list .actions button:hover,
+.product-list .actions button:focus {
+  opacity: 0.9;
+}
